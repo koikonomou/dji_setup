@@ -70,7 +70,7 @@ sudo cp startup_bulk/psdk-usb-configure.sh  /opt/nvidia/nv-l4t-usb-device-mode-s
 ps -aux | grep startup_bulk
 ```
 
- Register for a PSDK Developer Account and follow the rest installation instructions from the PSDK{https://developer.dji.com/doc/payload-sdk-tutorial/en/quick-start/quick-guide/jetson-nano.html} 
+ Register for a PSDK Developer Account and follow the rest installation instructions from the [PSDK](https://developer.dji.com/doc/payload-sdk-tutorial/en/quick-start/quick-guide/jetson-nano.html) 
 
 In order to install network device if you have a wireless interface :
 This command provides a list of devices with their VID and PID.
