@@ -4,10 +4,10 @@ Necessary hardware
 * Drone : Matrice 350RTK
 * Jetson nano
 * sd card 64Gb +
-* Necessary Hardware for DJI connection [here]{https://developer.dji.com/doc/payload-sdk-tutorial/en/quick-start/quick-guide/jetson-nano.html}
+* Necessary Hardware for DJI connection [here][https://developer.dji.com/doc/payload-sdk-tutorial/en/quick-start/quick-guide/jetson-nano.html]
 
 ### Installation
-1) Download and flash jetson nano Ubuntu 20.04 image from [here]{https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image}
+1) Download and flash jetson nano Ubuntu 20.04 image from [here][https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image]
 
 After booting on jetson image for first time run :
 ```
@@ -17,7 +17,7 @@ sudo apt-get install automake
 sudo apt-get install libaio-dev
 ```
 
-2) Follow the instructions to install libopus 1.3.1{https://opus-codec.org/release/stable/2019/04/12/libopus-1_3_1.html}
+2) Follow the instructions to install libopus 1.3.1 [here][https://opus-codec.org/release/stable/2019/04/12/libopus-1_3_1.html]
 ```
 tar -xzvf opus-1.3.1.tar.gz
 cd opus-1.3.1/
