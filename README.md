@@ -4,10 +4,10 @@ Necessary hardware
 * Drone : Matrice 350RTK
 * Jetson nano
 * sd card 64Gb +
-* Necessary Hardware for DJI connection [here][https://developer.dji.com/doc/payload-sdk-tutorial/en/quick-start/quick-guide/jetson-nano.html]
+* Necessary Hardware for DJI connection [here](https://developer.dji.com/doc/payload-sdk-tutorial/en/quick-start/quick-guide/jetson-nano.html)
 
 ### Installation
-1) Download and flash jetson nano Ubuntu 20.04 image from [here][https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image]
+1) Download and flash jetson nano Ubuntu 20.04 image from [here](https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image)
 
 After booting on jetson image for first time run :
 ```
@@ -17,7 +17,7 @@ sudo apt-get install automake
 sudo apt-get install libaio-dev
 ```
 
-2) Follow the instructions to install libopus 1.3.1 [here][https://opus-codec.org/release/stable/2019/04/12/libopus-1_3_1.html]
+2) Follow the instructions to install libopus 1.3.1 [here](https://opus-codec.org/release/stable/2019/04/12/libopus-1_3_1.html)
 ```
 tar -xzvf opus-1.3.1.tar.gz
 cd opus-1.3.1/
@@ -27,7 +27,7 @@ make -j16
 sudo make install
 ``` 
 
-3) Follow the instructions to install ffmpeg.4.3.2 download from [here]{https://ffmpeg.org/releases/?C=N;O=D}
+3) Follow the instructions to install ffmpeg.4.3.2 download from [here](https://ffmpeg.org/releases/?C=N;O=D)
 ```
 tar -zxvf ffmpeg-4.3.2.tar.gz
 ./configure --enable-shared or ./configure --prefix=/usr/local
@@ -57,7 +57,7 @@ Verify opencv installation and install libusb
 opencv_version
 sudo apt-get install libusb-1.0-0-dev
 ```
-PSDK offers a Jetson Nano Usb Bulk Configuration File download from [here]{https://terra-1-g.djicdn.com/71a7d383e71a4fb8887a310eb746b47f/psdk/e-port/usb-bulk-configuration-reference.zip} ，including the configuration script (psdk-usb-configure.sh) and configuration program (startup_bulk).
+PSDK offers a Jetson Nano Usb Bulk Configuration File download from [here](https://terra-1-g.djicdn.com/71a7d383e71a4fb8887a310eb746b47f/psdk/e-port/usb-bulk-configuration-reference.zip) ，including the configuration script (psdk-usb-configure.sh) and configuration program (startup_bulk).
 ```
 /* Back up the bulk configuration file of jetson nano */
 cp /opt/nvidia/l4t-usb-device-mode-start.sh ~/Desktop/nano-usb-config/nv-l4t-usb-device-mode-start-bk.sh
@@ -93,9 +93,9 @@ samples/sample_c/platform/linux/nvidia_jetson/hal/dji_network.h
 samples/sample_c++/platform/linux/nvidia_jetson/hal/dji_network.h
 
 Install ROS2 Humble :
-Follow the instructions [here]{https://nvidia-isaac-ros.github.io/getting_started/isaac_ros_buildfarm_cdn.html}
+Follow the instructions [here](https://nvidia-isaac-ros.github.io/getting_started/isaac_ros_buildfarm_cdn.html)
 
-Following the ROS2 Humble installation, install the psdk_ros2 wrapper following the installation steps [here]{https://umdlife.github.io/psdk_ros2/documentation/Introduction.html}
+Following the ROS2 Humble installation, install the psdk_ros2 wrapper following the installation steps [here](https://umdlife.github.io/psdk_ros2/documentation/Introduction.html)
 
 Ensure you have the same user infos at all files:
 PSDK can not run without filling in the information.
