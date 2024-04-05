@@ -107,3 +107,14 @@ Update with the proper app infos the ROS2 PSDK wrapper.
 ```
 ~/psdk_ros2_ws/src/psdk_ros2/psdk_wrapper/cfg/psdk_params.yaml
 ```
+If you encouter errors with lswresample or llzma consider manually add the dependencies at psdk_wrapper/CMakeLists.txt
+```
+target_link_libraries(psdk_wrapper_node
+  ${FFMPEG_LIBRARIES}
+  -lusb-1.0
+  -lavcodec
+  -lswscale
+  -lswresample # Add this line for libswresample
+  -llzma        # Add this line for liblzma
+)
+```
