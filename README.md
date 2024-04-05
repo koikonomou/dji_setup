@@ -30,7 +30,7 @@ sudo make install
 3) Follow the instructions to install ffmpeg.4.3.2 download from [here](https://ffmpeg.org/releases/?C=N;O=D)
 ```
 tar -zxvf ffmpeg-4.3.2.tar.gz
-./configure --enable-shared or ./configure --prefix=/usr/local
+./configure --enable-shared --prefix=/usr/local
 make && make install
 sudo ldconfig
 ffmpeg -version
