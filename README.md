@@ -85,7 +85,7 @@ Bus 001 Device 004: ID 04ca:0061 Lite-On Technology Corp. 4-Port USB 2.1 Hub
 Bus 001 Device 003: ID 0bda:8179 Realtek Semiconductor Corp. RTL8188EUS 802.11n Wireless Network Adapter
 ```
 
-The ID 0bda:8179 corresponds to the VID and PID of the device
+The ID 0bda:8179 corresponds to the VID and PID of the device. 
 These are the values you would use in the SDK configuration to specify the wireless network adapter you're working with. 
 Configure the currently used wireless network interface controller device name, VID, and PID in the following files(lines 13-19).
 
@@ -97,10 +97,13 @@ Follow the instructions [here](https://nvidia-isaac-ros.github.io/getting_starte
 
 Following the ROS2 Humble installation, install the psdk_ros2 wrapper following the installation steps [here](https://umdlife.github.io/psdk_ros2/documentation/Introduction.html)
 
-Ensure you have the same user infos at all files:
+Ensure you have the same app infos at all the following files:
 PSDK can not run without filling in the information.
 
     samples/sample_c/platform/linux/nvidia_jetson/application/dji_sdk_app_info.h
     samples/sample_c++/platform/linux/nvidia_jetson/application/dji_sdk_app_info.h
 
-ROS2 PSDK wrapper 
+Update with the proper app infos the ROS2 PSDK wrapper. 
+```
+~/psdk_ros2_ws/src/psdk_ros2/psdk_wrapper/cfg/psdk_params.yaml
+```
