@@ -102,6 +102,8 @@ PSDK can not run without filling in the information.
 
     samples/sample_c/platform/linux/nvidia_jetson/application/dji_sdk_app_info.h
     samples/sample_c++/platform/linux/nvidia_jetson/application/dji_sdk_app_info.h
+    samples/sample_c++/platform/linux/manifold2/application/dji_sdk_app_info.h
+    samples/sample_c/platform/linux/manifold2/application/dji_sdk_app_info.h
 
 Update with the proper app infos the ROS2 PSDK wrapper. 
 ```
