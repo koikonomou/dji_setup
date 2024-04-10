@@ -69,6 +69,8 @@ sudo cp startup_bulk/psdk-usb-configure.sh  /opt/nvidia/nv-l4t-usb-device-mode-s
 /* After restarting the system, make sure that startup_bulk is running normally */
 ps -aux | grep startup_bulk
 ```
+CAUTION : At the /opt/nvidia/nv-l4t-usb-device-mode-start.sh file you need to change the path /home/dji/Desktop/startup_bulk/startup_bulk everywhere in the script with the actual path of the start_bulk file.
+After the restart the ps -aux | grep startup_bulk should show the /dev/usb-ffs/bulk1 and /dev/usb-ffs/bulk2 .
 
  Register for a PSDK Developer Account and follow the rest installation instructions from the [PSDK](https://developer.dji.com/doc/payload-sdk-tutorial/en/quick-start/quick-guide/jetson-nano.html) 
 
@@ -105,6 +107,7 @@ PSDK can not run without filling in the information.
     samples/sample_c++/platform/linux/manifold2/application/dji_sdk_app_info.h
     samples/sample_c/platform/linux/manifold2/application/dji_sdk_app_info.h
 
+If you want to compile the scripts for manifold and nvidia_jetson consider adding both at the CMakeLists.txt before proceding with the cmake .
 Update with the proper app infos the ROS2 PSDK wrapper. 
 ```
 ~/psdk_ros2_ws/src/psdk_ros2/psdk_wrapper/cfg/psdk_params.yaml
